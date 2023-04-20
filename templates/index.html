@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .video-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;  /* set to the width of your video */
+                height: auto; /* set to the height of your video */
+                margin: auto;
+            }
+
+            .mt-5{
+                text-align: center;
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div class="video-container">
+                <div class="row">
+                    <div class="video-container"></div>
+                        <h3 class="mt-5">Live Streaming</h3>
+                        <img src="{{ url_for('video_feed') }}" width="100%">
+            </div>
+        </div>
+        </body>
+</html>
